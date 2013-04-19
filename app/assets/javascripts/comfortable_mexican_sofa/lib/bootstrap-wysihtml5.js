@@ -13,6 +13,9 @@
                 "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h1' tabindex='-1'>" + locale.font_styles.h1 + "</a></li>" +
                 "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h2' tabindex='-1'>" + locale.font_styles.h2 + "</a></li>" +
                 "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h3' tabindex='-1'>" + locale.font_styles.h3 + "</a></li>" +
+                "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h3' tabindex='-1'>" + locale.font_styles.h4 + "</a></li>" +
+                "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h3' tabindex='-1'>" + locale.font_styles.h5 + "</a></li>" +
+                "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h3' tabindex='-1'>" + locale.font_styles.h6 + "</a></li>" +
               "</ul>" +
             "</li>";
         },
@@ -412,6 +415,9 @@
                 "h1": {},
                 "h2": {},
                 "h3": {},
+                "h4": {},
+                "h5": {},
+                "h6": {},
                 "blockquote": {},
                 "u": 1,
                 "img": {
@@ -435,10 +441,10 @@
                 "div": 1
             }
         },
-        stylesheets: ["./lib/css/wysiwyg-color.css"], // (path_to_project/lib/css/wysiwyg-color.css)
+        stylesheets: ["/assets/foundation_and_overrides.css", "/assets/blog.css", "/assets/content.css", "/assets/galleria.css", "/assets/portfolio.css", "/assets/structure.css"], // (path_to_project/lib/css/wysiwyg-color.css)
         locale: "en"
     };
-
+    
     if (typeof $.fn.wysihtml5.defaultOptionsCache === 'undefined') {
         $.fn.wysihtml5.defaultOptionsCache = $.extend(true, {}, $.fn.wysihtml5.defaultOptions);
     }
@@ -449,7 +455,10 @@
                 normal: "Normal text",
                 h1: "Heading 1",
                 h2: "Heading 2",
-                h3: "Heading 3"
+                h3: "Heading 3",
+                h4: "Heading 4",
+                h5: "Heading 5",
+                h6: "Heading 6"
             },
             emphasis: {
                 bold: "Bold",
