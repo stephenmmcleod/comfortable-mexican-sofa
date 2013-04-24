@@ -145,3 +145,4 @@ window.CMS.uploader = ->
       xhr.setRequestHeader('X-File-Name', file.name)
       xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
       xhr.send(file)
+      
