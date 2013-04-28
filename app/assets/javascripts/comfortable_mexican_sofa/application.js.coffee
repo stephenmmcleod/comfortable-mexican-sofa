@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 #= require jquery
 #= require jquery_ujs
 #= require jquery-ui
